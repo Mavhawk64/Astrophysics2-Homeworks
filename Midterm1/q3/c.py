@@ -30,6 +30,7 @@ plt.plot(t, S)
 plt.xlabel("Time (s)")
 plt.ylabel("S")
 plt.title("S vs Time")
+plt.xscale("log")
 plt.savefig(os.path.join(dir, "S_vs_time.png"))
 plt.clf()  # Clear figure
 
@@ -52,6 +53,7 @@ plt.plot(S, x)
 plt.xlabel("S")
 plt.ylabel("x")
 plt.title("x vs S")
+plt.xscale("log")
 plt.savefig(os.path.join(dir, "x_vs_S.png"))
 plt.clf()
 
